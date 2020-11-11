@@ -1,27 +1,3 @@
-using UnityEngine;
-using UnityEngine.Timeline;
-
-namespace UnityEditor.Timeline
-{
-    /// <summary>
-    /// Internally used Inspector
-    /// </summary>
-    [CustomEditor(typeof(DirectorNamedColor))]
-    class DirectorNamedColorInspector : Editor
-    {
-        public override void OnInspectorGUI()
-        {
-            base.OnInspectorGUI();
-            if (GUILayout.Button("ToTextAsset"))
-            {
-                DirectorStyles.Instance.ExportSkinToFile();
-            }
-
-            if (GUILayout.Button("Reload From File"))
-            {
-                DirectorStyles.Instance.ReloadSkin();
-                UnityEditor.Selection.activeObject = DirectorStyles.Instance.customSkin;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:995c23322452fde49ccbba3c41dfc49064b5bc9cb53539b02bf3b9a3fa8105f3
+size 751

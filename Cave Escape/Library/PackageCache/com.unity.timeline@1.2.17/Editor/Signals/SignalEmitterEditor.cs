@@ -1,23 +1,3 @@
-using UnityEngine;
-using UnityEngine.Timeline;
-
-namespace UnityEditor.Timeline.Signals
-{
-    [CustomTimelineEditor(typeof(SignalEmitter))]
-    class SignalEmitterEditor : MarkerEditor
-    {
-        static readonly string MissingAssetError = LocalizationDatabase.GetLocalizedString("No signal assigned");
-
-        public override MarkerDrawOptions GetMarkerOptions(IMarker marker)
-        {
-            var options = base.GetMarkerOptions(marker);
-            SignalEmitter emitter = (SignalEmitter)marker;
-            if (emitter.asset != null)
-                options.tooltip = emitter.asset.name;
-            else
-                options.errorText = MissingAssetError;
-
-            return options;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:91c61699b97b67c460f1c96946c6b52a32d16afb8c63c6cc98721dde7910da3e
+size 741

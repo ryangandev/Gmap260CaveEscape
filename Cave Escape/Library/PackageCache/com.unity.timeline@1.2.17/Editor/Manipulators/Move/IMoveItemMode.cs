@@ -1,28 +1,3 @@
-using System.Collections.Generic;
-using UnityEngine;
-
-namespace UnityEditor.Timeline
-{
-    interface IMoveItemMode
-    {
-        void OnTrackDetach(IEnumerable<ItemsPerTrack> itemsGroups);
-        void HandleTrackSwitch(IEnumerable<ItemsPerTrack> itemsGroups);
-        bool AllowTrackSwitch();
-
-        double AdjustStartTime(WindowState state, ItemsPerTrack itemsGroup, double time);
-
-        void OnModeClutchEnter(IEnumerable<ItemsPerTrack> itemsGroups);
-        void OnModeClutchExit(IEnumerable<ItemsPerTrack> itemsGroups);
-
-        void BeginMove(IEnumerable<ItemsPerTrack> itemsGroups);
-        void UpdateMove(IEnumerable<ItemsPerTrack> itemsGroups);
-        void FinishMove(IEnumerable<ItemsPerTrack> itemsGroups);
-
-        bool ValidateMove(ItemsPerTrack itemsGroup);
-    }
-
-    interface IMoveItemDrawer
-    {
-        void DrawGUI(WindowState state, IEnumerable<MovingItems> movingItems, Color color);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bc056f5c59250f369e70d4decbac3fd71175125775b42ae6deebb2e84a12712c
+size 949

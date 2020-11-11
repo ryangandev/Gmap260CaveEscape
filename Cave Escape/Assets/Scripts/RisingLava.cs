@@ -1,29 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RisingLava : MonoBehaviour
-{
-    public Transform pos1;
-    public float speed;
-    public Transform startPos;
-
-    Vector3 nextPos;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        nextPos = startPos.position;
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if(transform.position == startPos.position)
-        {
-            nextPos = pos1.position;
-        }
-
-        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6f64ca80341f80100f4882f91dfe03899971357e67093698d2782087d7e72b1
+size 668

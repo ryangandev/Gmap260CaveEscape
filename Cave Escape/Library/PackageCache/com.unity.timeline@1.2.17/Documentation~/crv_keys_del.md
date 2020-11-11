@@ -1,6 +1,3 @@
-# Deleting keys
-
-The Curves view provides the following methods for deleting keys:
-
-* Right-click a key and select **Delete Key** from the context menu. This method does not affect selected keys.
-* Select a key and either press Delete or right-click and select **Delete Key** from the context menu.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f81ef75f72ecc8cebe39d9fc3535b2cf1b454635a98c881ec39e31eadbd0f9cb
+size 305

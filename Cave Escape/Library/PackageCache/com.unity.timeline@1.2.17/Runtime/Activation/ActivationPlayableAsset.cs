@@ -1,29 +1,3 @@
-#if UNITY_EDITOR
-using System.ComponentModel;
-#endif
-using UnityEngine.Playables;
-
-namespace UnityEngine.Timeline
-{
-    /// <summary>
-    /// Playable Asset class for Activation Tracks
-    /// </summary>
-#if UNITY_EDITOR
-    [DisplayName("Activation Clip")]
-#endif
-    class ActivationPlayableAsset : PlayableAsset, ITimelineClipAsset
-    {
-        /// <summary>
-        /// Returns a description of the features supported by activation clips
-        /// </summary>
-        public ClipCaps clipCaps { get { return ClipCaps.None; } }
-
-        /// <summary>
-        /// Overrides PlayableAsset.CreatePlayable() to inject needed Playables for an activation asset
-        /// </summary>
-        public override Playable CreatePlayable(PlayableGraph graph, GameObject go)
-        {
-            return Playable.Create(graph);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ca7291a40740ac5c6e1c812a42767878292bf4f60f3ca470e7663b0d825de353
+size 867

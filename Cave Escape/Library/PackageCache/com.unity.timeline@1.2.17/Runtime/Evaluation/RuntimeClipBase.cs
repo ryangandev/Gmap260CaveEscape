@@ -1,21 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEngine.Timeline
-{
-    internal abstract class RuntimeClipBase : RuntimeElement
-    {
-        public abstract double start { get; }
-        public abstract double duration { get; }
-
-        public override Int64 intervalStart
-        {
-            get { return DiscreteTime.GetNearestTick(start); }
-        }
-
-        public override Int64 intervalEnd
-        {
-            get { return DiscreteTime.GetNearestTick(start + duration); }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9ce157a512635b70edcccb70d0737f04a4782c0b0952efd5475f2e8280bfe276
+size 523

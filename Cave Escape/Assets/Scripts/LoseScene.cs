@@ -1,27 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class LoseScene : MonoBehaviour
-{   
-    public GameObject Losescrn;
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.tag == "Player")
-        {
-            Losescrn.gameObject.SetActive(true);
-        }
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene("Game");
-    }
-
-    public void loadMenu()
-    {
-        SceneManager.LoadScene("Menu");
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ecfe662b755c1da3e093eba4909ceff03860ecc4d985e645b564537fc32eddd5
+size 564

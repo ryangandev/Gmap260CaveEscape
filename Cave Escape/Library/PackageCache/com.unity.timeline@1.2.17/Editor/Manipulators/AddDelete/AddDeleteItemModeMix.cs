@@ -1,26 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace UnityEditor.Timeline
-{
-    class AddDeleteItemModeMix : IAddDeleteItemMode
-    {
-        public void InsertItemsAtTime(IEnumerable<ItemsPerTrack> itemsGroups, double requestedTime)
-        {
-            ItemsUtils.SetItemsStartTime(itemsGroups, requestedTime);
-            EditModeMixUtils.PrepareItemsForInsertion(itemsGroups);
-
-            if (!EditModeMixUtils.CanInsert(itemsGroups))
-            {
-                var validTime = itemsGroups.Select(c => c.targetTrack).Max(parent => parent.duration);
-                ItemsUtils.SetItemsStartTime(itemsGroups, validTime);
-            }
-        }
-
-        public void RemoveItems(IEnumerable<ItemsPerTrack> itemsGroups)
-        {
-            // Nothing
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e3b48d9fc58f718845e71b71983ce320910905e304d0b6072be37456129c046
+size 827

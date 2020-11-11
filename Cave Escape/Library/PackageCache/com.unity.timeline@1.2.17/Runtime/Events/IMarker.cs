@@ -1,31 +1,3 @@
-namespace UnityEngine.Timeline
-{
-    /// <summary>
-    /// Interface implemented by markers.
-    /// </summary>
-    /// <remarks>
-    /// A marker is a point in time.
-    /// </remarks>
-    /// <seealso cref="UnityEngine.Timeline.Marker"/>
-    public interface IMarker
-    {
-        /// <summary>
-        /// The time set for the marker, in seconds.
-        /// </summary>
-        double time { get; set; }
-
-        /// <summary>
-        /// The track that contains the marker.
-        /// </summary>
-        TrackAsset parent { get; }
-
-        /// <summary>
-        /// This method is called when the marker is initialized.
-        /// </summary>
-        /// <param name="parent">The track that contains the marker.</param>
-        /// <remarks>
-        /// This method is called after each deserialization of the Timeline Asset.
-        /// </remarks>
-        void Initialize(TrackAsset parent);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:34d210cee4369c5d77894af47b777db268b5ab2f6ecb05b9064de25fb8b56abb
+size 937

@@ -1,12 +1,3 @@
-{
-    "name": "Unity.TextMeshPro",
-    "references": [],
-    "optionalUnityReferences": [],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": []
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8bc61dc33006ca200d12259990c899ab5a2f1b1caab2b68e6933ad3fd2583fda
+size 312

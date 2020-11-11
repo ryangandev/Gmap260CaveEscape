@@ -1,34 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEditor
-{
-    // Special Clip Scope that only effects painting, and keeps the coordinate system identical
-    struct GUIViewportScope : IDisposable
-    {
-        bool m_open;
-        public GUIViewportScope(Rect position)
-        {
-            m_open = false;
-            if (Event.current.type == EventType.Repaint || Event.current.type == EventType.Layout)
-            {
-                GUI.BeginClip(position, -position.min, Vector2.zero, false);
-                m_open = true;
-            }
-        }
-
-        public void Dispose()
-        {
-            CloseScope();
-        }
-
-        void CloseScope()
-        {
-            if (m_open)
-            {
-                GUI.EndClip();
-                m_open = false;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec858d912e46cbf2c022350cc4f52867d8a115b780057b9aa2c4adb7c55aa124
+size 834

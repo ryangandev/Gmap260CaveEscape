@@ -1,27 +1,3 @@
-using UnityEditor;
-using UnityEditor.Timeline;
-using UnityEngine.Playables;
-
-namespace UnityEngine.Timeline
-{
-    [CustomEditor(typeof(AudioPlayableAsset))]
-    class AudioPlayableAssetInspector : BasicAssetInspector
-    {
-        public override void ApplyChanges()
-        {
-            // At this point, we are guaranteed that the Timeline window is focused on
-            // the correct asset and that a single clip is selected (see ClipInspector)
-
-            if (TimelineEditor.inspectedDirector == null)
-                // Do nothing if in asset mode
-                return;
-
-            var asset = (AudioPlayableAsset)target;
-
-            if (TimelineEditor.inspectedDirector.state == PlayState.Playing)
-                asset.LiveLink();
-            else
-                TimelineEditor.Refresh(RefreshReason.ContentsModified);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2d2d00c19cb1804dc088bde594bfd36d04615ab660a1c4e743e2012ef3fe651
+size 881

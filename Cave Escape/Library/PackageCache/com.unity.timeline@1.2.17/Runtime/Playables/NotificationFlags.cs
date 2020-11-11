@@ -1,31 +1,3 @@
-using System;
-
-namespace UnityEngine.Timeline
-{
-    /// <summary>
-    /// Use these flags to specify the notification behaviour.
-    /// </summary>
-    /// <see cref="UnityEngine.Playables.INotification"/>
-    [Flags]
-    [Serializable]
-    public enum NotificationFlags : short
-    {
-        /// <summary>
-        /// Use this flag to send the notification in Edit Mode.
-        /// </summary>
-        /// <remarks>
-        /// Sent on discontinuous jumps in time.
-        /// </remarks>
-        TriggerInEditMode = 1 << 0,
-
-        /// <summary>
-        /// Use this flag to send the notification if playback starts after the notification time.
-        /// </summary>
-        Retroactive = 1 << 1,
-
-        /// <summary>
-        /// Use this flag to send the notification only once when looping.
-        /// </summary>
-        TriggerOnce = 1 << 2,
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9665aa3c66a059a04953bc63ebc2095a37f531096bc6b81d3c73d9463a62d6d8
+size 890

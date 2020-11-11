@@ -1,11 +1,3 @@
-# Changelog
-All notable changes to this package will be documented in this file.
-
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
-
-## [1.0.0] - 2019-02-21
-
-### This is the first release of *Unity Package com.unity.ext.nunit*.
-
-- Migrated the custom version of nunit from inside of unity.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ba3ff493c1f3f4c849d56f5ee2df0962cd13d9e9fa1c65816a84c1524471935c
+size 417

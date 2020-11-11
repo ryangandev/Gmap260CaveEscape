@@ -1,32 +1,3 @@
-﻿using UnityEngine;
-
-
-namespace TMPro
-{
-    // Helpers used by the different sorting layer classes.
-    public static class SortingLayerHelper
-    {
-        // Gets an array of sorting layer names.
-        public static string[] sortingLayerNames
-        {
-            get
-            {
-                return GetSortingLayerNames();
-            }
-        }
-
-        static string[] GetSortingLayerNames()
-        {
-            int layerCount = SortingLayer.layers.Length;
-
-            string[] layerNames = new string[layerCount];
-
-            for (int i = 0; i < layerCount; i++)
-            {
-                layerNames[i] = SortingLayer.layers[i].name;
-            }
-
-            return layerNames;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e9f151fcb611f24ddcc510f24c986d3b3a93b4bac6ecf8df5ebc0fd9807170c
+size 755

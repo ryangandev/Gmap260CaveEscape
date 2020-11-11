@@ -1,15 +1,3 @@
-using UnityEditor.IMGUI.Controls;
-using UnityEngine;
-
-namespace UnityEditor.Timeline.Signals
-{
-    class SignalReceiverHeader : MultiColumnHeader
-    {
-        public SignalReceiverHeader(MultiColumnHeaderState state) : base(state) {}
-
-        protected override void AddColumnHeaderContextMenuItems(GenericMenu menu)
-        {
-            menu.AddItem(EditorGUIUtility.TrTextContent("Resize to Fit"), false, ResizeToFit);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:8045b882290772f837a59c89922d7689e7ae7286c7bf11c0cd9bfa871f522646
+size 456

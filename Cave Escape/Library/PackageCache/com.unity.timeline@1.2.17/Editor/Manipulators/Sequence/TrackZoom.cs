@@ -1,20 +1,3 @@
-using UnityEngine;
-using UnityEngine.Timeline;
-
-namespace UnityEditor.Timeline
-{
-    class TrackZoom : Manipulator
-    {
-        // only handles 'vertical' zoom. horizontal is handled in timelineGUI
-        protected override bool MouseWheel(Event evt, WindowState state)
-        {
-            if (EditorGUI.actionKey)
-            {
-                state.trackScale = Mathf.Min(Mathf.Max(state.trackScale + (evt.delta.y * 0.1f), 1.0f), 100.0f);
-                return true;
-            }
-
-            return false;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:039b378a83aeccac7a5480f3b88b9bb1f9a014e35d0ab201c33d1f177b569c91
+size 553

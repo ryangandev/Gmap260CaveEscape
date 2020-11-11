@@ -1,20 +1,3 @@
-using System;
-using UnityEngine;
-
-namespace UnityEditor
-{
-    struct GUIMixedValueScope : IDisposable
-    {
-        readonly bool m_PrevValue;
-        public GUIMixedValueScope(bool newValue)
-        {
-            m_PrevValue = EditorGUI.showMixedValue;
-            EditorGUI.showMixedValue = newValue;
-        }
-
-        public void Dispose()
-        {
-            EditorGUI.showMixedValue = m_PrevValue;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:da9ebcdeba7394cc66cc16ad09f08da4f750934c08c6953c76ff07c43ec75638
+size 444

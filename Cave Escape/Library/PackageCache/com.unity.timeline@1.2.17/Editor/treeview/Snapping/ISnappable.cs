@@ -1,22 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEditor.Timeline
-{
-    struct Edge
-    {
-        public double time { get; set; }
-
-        public bool showSnapHint { get; set; }
-
-        public Edge(double edgeTime, bool snapHint = true) : this()
-        {
-            time = edgeTime;
-            showSnapHint = snapHint;
-        }
-    }
-
-    interface ISnappable
-    {
-        IEnumerable<Edge> SnappableEdgesFor(IAttractable attractable, ManipulateEdges manipulateEdges);
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a2a81768c95cbc8a6df863f18a55a9fd09e20d36dffe70b48d7dac041f0e80df
+size 506

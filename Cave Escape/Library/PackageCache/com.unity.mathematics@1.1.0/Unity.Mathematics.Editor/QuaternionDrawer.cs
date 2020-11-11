@@ -1,18 +1,3 @@
-﻿using UnityEditor;
-
-namespace Unity.Mathematics.Editor
-{
-    [CustomPropertyDrawer(typeof(quaternion))]
-    class QuaternionDrawer : PostNormalizedVectorDrawer
-    {
-        protected override SerializedProperty GetVectorProperty(SerializedProperty property)
-        {
-            return property.FindPropertyRelative("value");
-        }
-
-        protected override double4 Normalize(double4 value)
-        {
-            return math.normalizesafe(new quaternion((float4)value)).value;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:c6277f0d8f9c1b91ad64b3cc9c8a6cc45c5eb83ebcb67cf5204bcf96e635fa63
+size 522

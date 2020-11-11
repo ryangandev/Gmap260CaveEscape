@@ -1,27 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.Timeline
-{
-    static class EditModeGUIUtils
-    {
-        public static void DrawBoundsEdge(Rect bounds, Color color, TrimEdge edge, float width = 4.0f)
-        {
-            var r = bounds;
-            r.yMin += 2.0f;
-            r.yMax -= 2.0f;
-            r.width = width;
-
-            r.x = edge == TrimEdge.End ? bounds.xMax : bounds.xMin - width;
-
-            EditorGUI.DrawRect(r, color);
-        }
-
-        public static void DrawOverlayRect(Rect bounds, Color overlayColor)
-        {
-            var c = overlayColor;
-            c.a = 0.2f;
-            EditorGUI.DrawRect(bounds, c);
-            EditorGUI.DrawOutline(bounds, 1.0f, new Color(1.0f, 1.0f, 1.0f, 0.5f));
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a6986ba69ec204838d0198ae1393e4674d6b055235833a5d50e2864d758ed31
+size 766

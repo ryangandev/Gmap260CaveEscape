@@ -1,31 +1,3 @@
-using System;
-using UnityEditor.IMGUI.Controls;
-using UnityEngine.Timeline;
-
-namespace UnityEditor.Timeline.Signals
-{
-    static class SignalListFactory
-    {
-        public static SignalReceiverTreeView CreateSignalInspectorList(TreeViewState state, SignalReceiverHeader header, SignalReceiver target, SerializedObject so)
-        {
-            return new SignalReceiverTreeView(state, header, target, so);
-        }
-
-        public static  SignalReceiverHeader CreateHeader(MultiColumnHeaderState state, int columnHeight)
-        {
-            var header = new SignalReceiverHeader(state) { height = columnHeight };
-            header.ResizeToFit();
-            return header;
-        }
-
-        public static MultiColumnHeaderState CreateHeaderState()
-        {
-            return new MultiColumnHeaderState(SignalReceiverTreeView.GetColumns());
-        }
-
-        public static TreeViewState CreateViewState()
-        {
-            return new TreeViewState();
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd9e373a6d42b2602f13a1e0dd4f6dca2e18ef08fd2222076139a0eb7d6f0dfa
+size 1013

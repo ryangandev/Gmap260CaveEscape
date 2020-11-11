@@ -1,13 +1,3 @@
-using System;
-using UnityEngine.Playables;
-
-namespace UnityEngine.Timeline
-{
-    [Serializable]
-    [NotKeyable]
-    class AudioClipProperties : PlayableBehaviour
-    {
-        [Range(0.0f, 1.0f)]
-        public float volume = 1.0f;
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5e21054ddef76b0d4e4d13fb29e537a714ed2aeab2afc70219f8a270a236be0f
+size 254

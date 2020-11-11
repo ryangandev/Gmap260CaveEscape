@@ -1,27 +1,3 @@
-namespace UnityEngine.Timeline
-{
-    /// <summary>
-    /// Interface that can be implemented by MonoBehaviours indicating that they receive time-related control calls from a PlayableGraph.
-    /// </summary>
-    /// <remarks>
-    /// Implementing this interface on MonoBehaviours attached to GameObjects under control by control-tracks will cause them to be notified when associated Timeline clips are active.
-    /// </remarks>
-    public interface ITimeControl
-    {
-        /// <summary>
-        /// Called each frame the Timeline clip is active.
-        /// </summary>
-        /// <param name="time">The local time of the associated Timeline clip.</param>
-        void SetTime(double time);
-
-        /// <summary>
-        /// Called when the associated Timeline clip becomes active.
-        /// </summary>
-        void OnControlTimeStart();
-
-        /// <summary>
-        /// Called when the associated Timeline clip becomes deactivated.
-        /// </summary>
-        void OnControlTimeStop();
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a616d17b07e827841e1d223ecc40b07968b7e4a10b2bf3e7053074f7af0400f6
+size 1034

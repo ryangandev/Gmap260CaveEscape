@@ -1,27 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
-
-public class WinningScene : MonoBehaviour
-{
-    public GameObject Endscrn;
-    
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.tag == "Player")
-        {
-            Endscrn.gameObject.SetActive(true);
-        }
-    }
-
-    public void Restart()
-    {
-        SceneManager.LoadScene("Game");
-    }
-
-    public void loadMenu()
-    {
-        SceneManager.LoadScene("Menu");
-    }  
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:737e704f73cef942c4044695adc4b662cdab46888ed44e6a55754b8a1a1d9d50
+size 568

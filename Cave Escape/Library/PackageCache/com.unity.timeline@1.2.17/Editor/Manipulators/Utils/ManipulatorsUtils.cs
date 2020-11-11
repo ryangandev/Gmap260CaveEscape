@@ -1,19 +1,3 @@
-using UnityEngine;
-
-namespace UnityEditor.Timeline
-{
-    static class ManipulatorsUtils
-    {
-        public static EventModifiers actionModifier
-        {
-            get
-            {
-                if (Application.platform == RuntimePlatform.OSXEditor ||
-                    Application.platform == RuntimePlatform.OSXPlayer)
-                    return EventModifiers.Command;
-
-                return EventModifiers.Control;
-            }
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ddeba29b6d8c5a895cc2fb317f898aaaabf5818913a17fbac300ca0b2b8ea3c
+size 480

@@ -1,18 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEditor.Timeline
-{
-    class AddDeleteItemModeRipple : IAddDeleteItemMode
-    {
-        public void InsertItemsAtTime(IEnumerable<ItemsPerTrack> itemsGroups, double requestedTime)
-        {
-            ItemsUtils.SetItemsStartTime(itemsGroups, requestedTime);
-            EditModeRippleUtils.Insert(itemsGroups);
-        }
-
-        public void RemoveItems(IEnumerable<ItemsPerTrack> itemsGroups)
-        {
-            EditModeRippleUtils.Remove(itemsGroups);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ad8162ca0a4002274274821f2f520b5f350df2d47565bafb2704ca708bd6f06
+size 544

@@ -1,28 +1,3 @@
-using System.Collections.Generic;
-
-namespace UnityEditor.Timeline
-{
-    class Control
-    {
-        readonly List<Manipulator> m_Manipulators = new List<Manipulator>();
-
-        public bool HandleManipulatorsEvents(WindowState state)
-        {
-            var isHandled = false;
-
-            foreach (var manipulator in m_Manipulators)
-            {
-                isHandled = manipulator.HandleEvent(state);
-                if (isHandled)
-                    break;
-            }
-
-            return isHandled;
-        }
-
-        public void AddManipulator(Manipulator m)
-        {
-            m_Manipulators.Add(m);
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1270b974ad2acb1ada64a3c66fb049b357b2f6cf9acb8c3aadb1ccd8302a4e48
+size 665
