@@ -2,12 +2,14 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - CameraFollow
+    - Coin
     - LoseScene
     - Mainmenu
     - Move2D
     - MovingPlatform
     - PauseMenu
     - RisingLava
+    - ScoreManager
     - SettingsMenu
     - WinningScene
     Unity.2D.Animation.Editor.dll:
@@ -27,12 +29,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -62,6 +58,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 60
       Script: {instanceID: 0}
     - Class: 61
@@ -77,17 +75,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11458}
     - Class: 114
-      Script: {instanceID: 12184}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12204}
+      Script: {instanceID: 12186}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12206}
     - Class: 114
-      Script: {instanceID: 12394}
+      Script: {instanceID: 12308}
+    - Class: 114
+      Script: {instanceID: 12396}
     - Class: 114
       Script: {instanceID: 12918}
     - Class: 114
@@ -95,19 +95,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13360}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13672}
+    - Class: 114
+      Script: {instanceID: 13682}
     - Class: 114
       Script: {instanceID: 13776}
     - Class: 114
       Script: {instanceID: 13786}
     - Class: 114
-      Script: {instanceID: 14392}
+      Script: {instanceID: 14218}
     - Class: 114
-      Script: {instanceID: 25784}
+      Script: {instanceID: 14394}
     - Class: 114
-      Script: {instanceID: 68524}
+      Script: {instanceID: 18758}
     - Class: 114
-      Script: {instanceID: 80538}
+      Script: {instanceID: 18766}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -125,6 +127,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 251
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -146,15 +150,15 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11294}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11370}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12306}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12358}
+      Script: {instanceID: 12360}
     - Class: 114
       Script: {instanceID: 13014}
     - Class: 114
@@ -162,7 +166,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13378}
     - Class: 114
-      Script: {instanceID: 13674}
+      Script: {instanceID: 13672}
     - Class: 114
       Script: {instanceID: 13776}
     - Class: 114
@@ -170,11 +174,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14120}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 14228}
     - Class: 114
-      Script: {instanceID: 14392}
+      Script: {instanceID: 14394}
     - Class: 114
-      Script: {instanceID: 14434}
+      Script: {instanceID: 14436}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -228,6 +232,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mainmenu
+  - hash:
+      serializedVersion: 2
+      Hash: c8c5e65e9fb858572516474d6e2102bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenu
   - hash:
       serializedVersion: 2
       Hash: e7a73f5f78ba6445195ec23b74a1ce2d
@@ -578,6 +588,12 @@ ScriptsOnlyBuild:
     className: TextMeshProUGUI
   - hash:
       serializedVersion: 2
+      Hash: c35f921944e777e4ac8e43356dff0d55
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WinningScene
+  - hash:
+      serializedVersion: 2
       Hash: f336e086360abe49a3323e5f1583c35a
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -618,6 +634,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SettingsMenu
+  - hash:
+      serializedVersion: 2
+      Hash: 9d14843067b57be672ecdaf40daa75da
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RisingLava
   - hash:
       serializedVersion: 2
       Hash: 8cd1cbba27f3cb1717254f668e9e0d5a
@@ -716,24 +738,19 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 9d14843067b57be672ecdaf40daa75da
+      Hash: ee98729079998eb63435f99f41b30b9e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: RisingLava
+    className: ScoreManager
   - hash:
       serializedVersion: 2
-      Hash: c8c5e65e9fb858572516474d6e2102bc
+      Hash: 83e9a1bacd9a14c00e9241750629dffc
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PauseMenu
-  - hash:
-      serializedVersion: 2
-      Hash: c35f921944e777e4ac8e43356dff0d55
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: WinningScene
+    className: Coin
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/ganzh/Desktop/Gmap260CaveEscape/Cave Escape/Cave Escape.exe
+  playerPath: C:/Users/Jamie/Documents/GitHub/Gmap260CaveEscape/Cave Escape/Cave
+    Escape.exe

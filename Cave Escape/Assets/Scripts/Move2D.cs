@@ -78,4 +78,14 @@ public class Move2D : MonoBehaviour
             animator.Play("Pom_jump");
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Coins"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+
 }
