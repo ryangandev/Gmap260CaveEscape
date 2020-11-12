@@ -12,12 +12,15 @@ public class WinningScene : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             Endscrn.gameObject.SetActive(true);
+            LoseScene.pauseAllowed = false;
+            RisingLava.lavaRising = false;
         }
     }
 
     public void Restart()
     {
         SceneManager.LoadScene("Game");
+        LoseScene.pauseAllowed = true;
     }
 
     public void loadMenu()

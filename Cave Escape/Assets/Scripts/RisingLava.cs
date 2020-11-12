@@ -7,6 +7,7 @@ public class RisingLava : MonoBehaviour
     public Transform pos1;
     public float speed;
     public Transform startPos;
+    public static bool lavaRising = true;
 
     Vector3 nextPos;
 
@@ -24,6 +25,10 @@ public class RisingLava : MonoBehaviour
             nextPos = pos1.position;
         }
 
-        transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
+        if(lavaRising)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
+        }
+        
     }
 }
