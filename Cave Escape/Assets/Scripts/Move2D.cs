@@ -62,6 +62,13 @@ public class Move2D : MonoBehaviour
                 animator.Play("Pom_walk");
             sprite_renderer.flipX = true;
         }
+        else if(Input.GetKey("j"))
+        {
+            rb2d.velocity = new Vector2(0,0); 
+
+            if(isGrounded)
+                animator.Play("Attack");
+        }
 
         //Idle animation + velocity stop when not moving (stops sliding)
         else

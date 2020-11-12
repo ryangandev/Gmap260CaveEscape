@@ -1,8 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Attack
     - CameraFollow
     - Coin
+    - Enemy
     - LoseScene
     - Mainmenu
     - Move2D
@@ -29,6 +31,12 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -75,7 +83,9 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11294}
+      Script: {instanceID: 11292}
+    - Class: 114
+      Script: {instanceID: 11424}
     - Class: 114
       Script: {instanceID: 11458}
     - Class: 114
@@ -89,27 +99,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12396}
     - Class: 114
-      Script: {instanceID: 12918}
+      Script: {instanceID: 12646}
     - Class: 114
-      Script: {instanceID: 13014}
+      Script: {instanceID: 12824}
     - Class: 114
-      Script: {instanceID: 13360}
+      Script: {instanceID: 12922}
     - Class: 114
-      Script: {instanceID: 13672}
+      Script: {instanceID: 13018}
     - Class: 114
-      Script: {instanceID: 13682}
+      Script: {instanceID: 13364}
     - Class: 114
-      Script: {instanceID: 13776}
+      Script: {instanceID: 13678}
     - Class: 114
-      Script: {instanceID: 13786}
+      Script: {instanceID: 13688}
     - Class: 114
-      Script: {instanceID: 14218}
+      Script: {instanceID: 13782}
     - Class: 114
-      Script: {instanceID: 14394}
+      Script: {instanceID: 13792}
     - Class: 114
-      Script: {instanceID: 18758}
+      Script: {instanceID: 14224}
     - Class: 114
-      Script: {instanceID: 18766}
+      Script: {instanceID: 14400}
+    - Class: 114
+      Script: {instanceID: 14470}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,9 +162,9 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11294}
+      Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11370}
+      Script: {instanceID: 11368}
     - Class: 114
       Script: {instanceID: 11640}
     - Class: 114
@@ -160,25 +172,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12360}
     - Class: 114
-      Script: {instanceID: 13014}
+      Script: {instanceID: 13018}
     - Class: 114
-      Script: {instanceID: 13360}
+      Script: {instanceID: 13364}
     - Class: 114
-      Script: {instanceID: 13378}
+      Script: {instanceID: 13382}
     - Class: 114
-      Script: {instanceID: 13672}
+      Script: {instanceID: 13678}
     - Class: 114
-      Script: {instanceID: 13776}
+      Script: {instanceID: 13782}
     - Class: 114
-      Script: {instanceID: 14056}
+      Script: {instanceID: 14062}
     - Class: 114
-      Script: {instanceID: 14120}
+      Script: {instanceID: 14126}
     - Class: 114
-      Script: {instanceID: 14228}
+      Script: {instanceID: 14234}
     - Class: 114
-      Script: {instanceID: 14394}
+      Script: {instanceID: 14400}
     - Class: 114
-      Script: {instanceID: 14436}
+      Script: {instanceID: 14442}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -232,6 +244,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mainmenu
+  - hash:
+      serializedVersion: 2
+      Hash: 0359ded1a879193b4a089ae3af876d6e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Attack
   - hash:
       serializedVersion: 2
       Hash: c8c5e65e9fb858572516474d6e2102bc
@@ -462,6 +480,12 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
+      Hash: 83e9a1bacd9a14c00e9241750629dffc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Coin
+  - hash:
+      serializedVersion: 2
       Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -484,6 +508,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: ee98729079998eb63435f99f41b30b9e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -732,25 +762,18 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: c7a1cfbcd815f35b6700d8538ef4094e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Enemy
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ee98729079998eb63435f99f41b30b9e
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScoreManager
-  - hash:
-      serializedVersion: 2
-      Hash: 83e9a1bacd9a14c00e9241750629dffc
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Coin
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/Jamie/Documents/GitHub/Gmap260CaveEscape/Cave Escape/Cave
-    Escape.exe
+  playerPath: C:/Users/ganzh/Desktop/Gmap260CaveEscape/Cave Escape/Cave Escape.exe

@@ -10,14 +10,17 @@ public class PauseMenu : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(LoseScene.pauseAllowed)
         {
-            if(GameIsPaused)
+            if(Input.GetKeyDown(KeyCode.Escape))
             {
-                Resume();
-            }else
-            {
-                Pause();
+                if(GameIsPaused)
+                {
+                    Resume();
+                }else
+                {
+                    Pause();
+                }
             }
         }
     }
