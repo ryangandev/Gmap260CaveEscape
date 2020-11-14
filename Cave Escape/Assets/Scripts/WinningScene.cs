@@ -14,6 +14,7 @@ public class WinningScene : MonoBehaviour
             Endscrn.gameObject.SetActive(true);
             LoseScene.pauseAllowed = false;
             RisingLava.lavaRising = false;
+            Destroy(other.gameObject);
         }
     }
 

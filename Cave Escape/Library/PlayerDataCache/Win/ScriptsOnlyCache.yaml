@@ -10,6 +10,7 @@ ScriptsOnlyBuild:
     - Move2D
     - MovingPlatform
     - PauseMenu
+    - Pendulum
     - RisingLava
     - ScoreManager
     - SettingsMenu
@@ -72,6 +73,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 68
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -83,45 +86,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11308}
     - Class: 114
-      Script: {instanceID: 11424}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11458}
+      Script: {instanceID: 11474}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 12396}
+      Script: {instanceID: 12412}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 12662}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12840}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12938}
     - Class: 114
-      Script: {instanceID: 13018}
+      Script: {instanceID: 13034}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13380}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 13688}
+      Script: {instanceID: 13702}
     - Class: 114
-      Script: {instanceID: 13782}
+      Script: {instanceID: 13796}
     - Class: 114
-      Script: {instanceID: 13792}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14224}
+      Script: {instanceID: 14238}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14414}
     - Class: 114
-      Script: {instanceID: 14470}
+      Script: {instanceID: 14484}
+    - Class: 114
+      Script: {instanceID: 16110}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -139,6 +144,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 233
       Script: {instanceID: 0}
     - Class: 251
       Script: {instanceID: 0}
@@ -162,35 +169,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11292}
+      Script: {instanceID: 11308}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11384}
     - Class: 114
-      Script: {instanceID: 11640}
+      Script: {instanceID: 11656}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12324}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12376}
     - Class: 114
-      Script: {instanceID: 13018}
+      Script: {instanceID: 13034}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13380}
     - Class: 114
-      Script: {instanceID: 13382}
+      Script: {instanceID: 13398}
     - Class: 114
-      Script: {instanceID: 13678}
+      Script: {instanceID: 13692}
     - Class: 114
-      Script: {instanceID: 13782}
+      Script: {instanceID: 13796}
     - Class: 114
-      Script: {instanceID: 14062}
+      Script: {instanceID: 14076}
     - Class: 114
-      Script: {instanceID: 14126}
+      Script: {instanceID: 14140}
     - Class: 114
-      Script: {instanceID: 14234}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 14400}
+      Script: {instanceID: 14414}
     - Class: 114
-      Script: {instanceID: 14442}
+      Script: {instanceID: 14456}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -772,8 +779,15 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 48775e5492ee935c8080c6f896e85f94
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Pendulum
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/ganzh/Desktop/Gmap260CaveEscape/Cave Escape/Cave Escape.exe
+  playerPath: C:/Users/Jamie/Documents/GitHub/Gmap260CaveEscape/Cave Escape/Cave
+    Escape.exe
