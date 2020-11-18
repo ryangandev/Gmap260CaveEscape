@@ -46,7 +46,7 @@ public class Move2D : MonoBehaviour
         }
 
         //Left and Right character control inputs
-        if(Input.GetKey("d"))
+        if(Input.GetKey(KeyCode.D))
         {
             rb2d.velocity = new Vector2(walkSpeed, rb2d.velocity.y);
 
@@ -54,7 +54,7 @@ public class Move2D : MonoBehaviour
                 animator.Play("Pom_walk");
             sprite_renderer.flipX = false;
         }
-        else if(Input.GetKey("a"))
+        else if(Input.GetKey(KeyCode.A))
         {
             rb2d.velocity = new Vector2(-walkSpeed, rb2d.velocity.y);
             
@@ -62,7 +62,7 @@ public class Move2D : MonoBehaviour
                 animator.Play("Pom_walk");
             sprite_renderer.flipX = true;
         }
-        else if(Input.GetKey("j"))
+        else if(Input.GetKey(KeyCode.J))
         {
             rb2d.velocity = new Vector2(0,0); 
 
@@ -79,7 +79,7 @@ public class Move2D : MonoBehaviour
         }
 
         //Jump character control input
-        if(Input.GetKey("space") && isGrounded == true)
+        if(Input.GetKey(KeyCode.Space) && isGrounded == true)
         {
             rb2d.velocity = new Vector2(rb2d.velocity.x, jumpSpeed);
             animator.Play("Pom_jump");
