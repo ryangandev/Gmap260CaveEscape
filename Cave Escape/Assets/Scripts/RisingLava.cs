@@ -7,7 +7,7 @@ public class RisingLava : MonoBehaviour
     public Transform pos1;
     public float speed;
     public Transform startPos;
-    public static bool lavaRising = true;
+    public static bool lavaRising = false;
 
     Vector3 nextPos;
 

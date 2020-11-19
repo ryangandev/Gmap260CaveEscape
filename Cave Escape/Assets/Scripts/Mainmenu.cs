@@ -7,8 +7,9 @@ public class Mainmenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        RisingLava.lavaRising = true;
+        RisingLava.lavaRising = false;
         LoseScene.pauseAllowed = true;
+        startTrigger.beginAlert = true;
     }
 
     public void QuitGame()

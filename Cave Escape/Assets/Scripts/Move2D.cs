@@ -6,8 +6,8 @@ public class Move2D : MonoBehaviour
 {
     Animator animator;
     Rigidbody2D rb2d;
-    SpriteRenderer sprite_renderer;
-
+    public SpriteRenderer sprite_renderer;
+    public static bool spriteFlipped = false;
     public bool isGrounded;
 
     [SerializeField]
@@ -53,6 +53,7 @@ public class Move2D : MonoBehaviour
             if (isGrounded)
                 animator.Play("Pom_walk");
             sprite_renderer.flipX = false;
+            spriteFlipped = false;
         }
         else if(Input.GetKey(KeyCode.A))
         {
@@ -61,10 +62,11 @@ public class Move2D : MonoBehaviour
             if (isGrounded)
                 animator.Play("Pom_walk");
             sprite_renderer.flipX = true;
+            spriteFlipped = true;
         }
         else if(Input.GetKey(KeyCode.J))
         {
-            rb2d.velocity = new Vector2(0,0); 
+            rb2d.velocity = new Vector2(0,rb2d.velocity.y); 
 
             if(isGrounded)
                 animator.Play("Attack");

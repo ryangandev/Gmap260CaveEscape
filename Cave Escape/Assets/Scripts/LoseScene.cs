@@ -22,8 +22,9 @@ public class LoseScene : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("Game");
-        RisingLava.lavaRising = true;
+        RisingLava.lavaRising = false;
         pauseAllowed = true;
+        startTrigger.beginAlert = true;
     }
 
     public void loadMenu()

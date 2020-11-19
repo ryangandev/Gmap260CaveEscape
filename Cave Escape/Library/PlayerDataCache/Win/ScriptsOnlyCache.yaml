@@ -15,6 +15,7 @@ ScriptsOnlyBuild:
     - ScoreManager
     - SettingsMenu
     - WinningScene
+    - startTrigger
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -66,6 +67,8 @@ ScriptsOnlyBuild:
     - Class: 60
       Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 62
       Script: {instanceID: 0}
     - Class: 68
       Script: {instanceID: 0}
@@ -121,6 +124,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14402}
     - Class: 114
       Script: {instanceID: 14472}
+    - Class: 114
+      Script: {instanceID: 21104}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -247,7 +252,7 @@ ScriptsOnlyBuild:
     className: Mainmenu
   - hash:
       serializedVersion: 2
-      Hash: 0359ded1a879193b4a089ae3af876d6e
+      Hash: 2d1cae8b51e41b8cceb72054477570d0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Attack
@@ -469,7 +474,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 3cd0180f1c42c5588705cdff5e1245fc
+      Hash: 58d89dd03c9156b413c1f8628ae40427
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Move2D
@@ -779,9 +784,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5615d87eb2f78a8fe3e8d6e4c5aa49c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: startTrigger
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/Jamie/Documents/GitHub/Gmap260CaveEscape/Cave Escape/Cave
-    Escape.exe
+  playerPath: C:/Users/ganzh/Desktop/Gmap260CaveEscape/Cave Escape/Cave Escape.exe
