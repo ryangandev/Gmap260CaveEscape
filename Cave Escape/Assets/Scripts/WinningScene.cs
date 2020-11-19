@@ -22,6 +22,8 @@ public class WinningScene : MonoBehaviour
     {
         SceneManager.LoadScene("Game");
         LoseScene.pauseAllowed = true;
+        RisingLava.lavaRising = false;
+        startTrigger.beginAlert = true;
     }
 
     public void loadMenu()
