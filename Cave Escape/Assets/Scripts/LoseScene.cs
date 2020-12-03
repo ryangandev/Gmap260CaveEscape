@@ -25,6 +25,7 @@ public class LoseScene : MonoBehaviour
         RisingLava.lavaRising = false;
         pauseAllowed = true;
         startTrigger.beginAlert = true;
+        Physics2D.IgnoreLayerCollision(10, 9, false);
     }
 
     public void loadMenu()

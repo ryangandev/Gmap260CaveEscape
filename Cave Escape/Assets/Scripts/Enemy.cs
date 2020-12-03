@@ -5,6 +5,14 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int health;
+    public int maxHealth;
+    public HealthbarBehaviour healthbar;
+
+    void Start()
+    {
+        health = maxHealth;
+        healthbar.SetHealth(health, maxHealth);
+    }
 
     void Update()
     {
@@ -16,6 +24,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage){
         health -= damage;
+        healthbar.SetHealth(health, maxHealth);
         Debug.Log(health);
     }
 }

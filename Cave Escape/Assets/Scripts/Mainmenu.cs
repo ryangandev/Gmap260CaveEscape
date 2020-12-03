@@ -10,6 +10,7 @@ public class Mainmenu : MonoBehaviour
         RisingLava.lavaRising = false;
         LoseScene.pauseAllowed = true;
         startTrigger.beginAlert = true;
+        Physics2D.IgnoreLayerCollision(10, 9, false);
     }
 
     public void QuitGame()

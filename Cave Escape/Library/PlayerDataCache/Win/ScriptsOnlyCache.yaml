@@ -5,12 +5,17 @@ ScriptsOnlyBuild:
     - CameraFollow
     - Coin
     - Enemy
+    - EnemyAttacks
+    - HealthbarBehaviour
+    - Invulnerability
     - LoseScene
     - Mainmenu
     - Move2D
     - MovingPlatform
     - PauseMenu
     - Pendulum
+    - PomHealthbar
+    - PomStatus
     - RisingLava
     - ScoreManager
     - SettingsMenu
@@ -91,41 +96,53 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12186}
+      Script: {instanceID: 11840}
     - Class: 114
-      Script: {instanceID: 12206}
+      Script: {instanceID: 11846}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12012}
     - Class: 114
-      Script: {instanceID: 12396}
+      Script: {instanceID: 12192}
     - Class: 114
-      Script: {instanceID: 12646}
+      Script: {instanceID: 12212}
     - Class: 114
-      Script: {instanceID: 12824}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12922}
+      Script: {instanceID: 12402}
     - Class: 114
-      Script: {instanceID: 13018}
+      Script: {instanceID: 12652}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 12830}
     - Class: 114
-      Script: {instanceID: 13670}
+      Script: {instanceID: 12928}
+    - Class: 114
+      Script: {instanceID: 13024}
+    - Class: 114
+      Script: {instanceID: 13370}
+    - Class: 114
+      Script: {instanceID: 13598}
+    - Class: 114
+      Script: {instanceID: 13638}
     - Class: 114
       Script: {instanceID: 13680}
     - Class: 114
       Script: {instanceID: 13690}
     - Class: 114
-      Script: {instanceID: 13784}
+      Script: {instanceID: 13700}
     - Class: 114
-      Script: {instanceID: 13794}
+      Script: {instanceID: 13782}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 13796}
     - Class: 114
-      Script: {instanceID: 14402}
+      Script: {instanceID: 13806}
     - Class: 114
-      Script: {instanceID: 14472}
+      Script: {instanceID: 14238}
     - Class: 114
-      Script: {instanceID: 21104}
+      Script: {instanceID: 14414}
+    - Class: 114
+      Script: {instanceID: 14456}
+    - Class: 114
+      Script: {instanceID: 14484}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -174,29 +191,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 12308}
+      Script: {instanceID: 12314}
     - Class: 114
-      Script: {instanceID: 12360}
+      Script: {instanceID: 12366}
     - Class: 114
-      Script: {instanceID: 13018}
+      Script: {instanceID: 13024}
     - Class: 114
-      Script: {instanceID: 13364}
+      Script: {instanceID: 13370}
     - Class: 114
-      Script: {instanceID: 13382}
+      Script: {instanceID: 13388}
     - Class: 114
-      Script: {instanceID: 13680}
+      Script: {instanceID: 13690}
     - Class: 114
-      Script: {instanceID: 13784}
+      Script: {instanceID: 13796}
     - Class: 114
-      Script: {instanceID: 14064}
+      Script: {instanceID: 14076}
     - Class: 114
-      Script: {instanceID: 14128}
+      Script: {instanceID: 14140}
     - Class: 114
-      Script: {instanceID: 14236}
+      Script: {instanceID: 14248}
     - Class: 114
-      Script: {instanceID: 14402}
+      Script: {instanceID: 14414}
     - Class: 114
-      Script: {instanceID: 14444}
+      Script: {instanceID: 14456}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -366,10 +383,22 @@ ScriptsOnlyBuild:
     className: LayoutElement
   - hash:
       serializedVersion: 2
+      Hash: 5615d87eb2f78a8fe3e8d6e4c5aa49c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: startTrigger
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 2a2d7b828da8a3c9b45cde8b8c2e6fa1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyAttacks
   - hash:
       serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
@@ -412,6 +441,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.PixelPerfect.dll
     namespaceName: UnityEngine.U2D
     className: PixelPerfectCamera
+  - hash:
+      serializedVersion: 2
+      Hash: 280f2df8983d9aa29ffcdfdf8d569596
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PomStatus
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -618,6 +653,18 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 7c04273ac3484410ed3b20647e2c237a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthbarBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 7c04273ac3484410ed3b20647e2c237a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PomHealthbar
+  - hash:
+      serializedVersion: 2
       Hash: 48775e5492ee935c8080c6f896e85f94
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -640,6 +687,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Invulnerability
   - hash:
       serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
@@ -774,7 +827,7 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: c7a1cfbcd815f35b6700d8538ef4094e
+      Hash: b36a0e10ae2194cb64b168a8958c4581
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Enemy
@@ -784,14 +837,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 5615d87eb2f78a8fe3e8d6e4c5aa49c7
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: startTrigger
   platform: 5
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/ganzh/Desktop/Gmap260CaveEscape/Cave Escape/Cave Escape.exe
+  playerPath: C:/Users/ganzh/Desktop/Gmap260CaveEscape/Cave Escape.exe
