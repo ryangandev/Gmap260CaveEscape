@@ -38,7 +38,10 @@ public class Move2D : MonoBehaviour
         //checks if player is grounded
         isGrounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground")) ||
         Physics2D.Linecast(transform.position, groundCheckL.position, 1 << LayerMask.NameToLayer("Ground")) ||
-        Physics2D.Linecast(transform.position, groundCheckR.position, 1 << LayerMask.NameToLayer("Ground"));
+        Physics2D.Linecast(transform.position, groundCheckR.position, 1 << LayerMask.NameToLayer("Ground")) ||
+        Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Slope")) ||
+        Physics2D.Linecast(transform.position, groundCheckL.position, 1 << LayerMask.NameToLayer("Slope")) ||
+        Physics2D.Linecast(transform.position, groundCheckR.position, 1 << LayerMask.NameToLayer("Slope"));
 
         if(isGrounded == false)
         {
@@ -75,8 +78,22 @@ public class Move2D : MonoBehaviour
         //Idle animation + velocity stop when not moving (stops sliding)
         else
         {
-            if (isGrounded)
+            if (isGrounded){
                 animator.Play("Pom_stand");
+                RaycastHit2D hit = Physics2D.Linecast(transform.position, -Vector2.up, 1 << LayerMask.NameToLayer("Slope"));
+		
+		        if (hit.collider != null && Mathf.Abs(hit.normal.x) > 0.1f) {
+			    Rigidbody2D body = GetComponent<Rigidbody2D>();
+			    // Apply the opposite force against the slope force 
+			    // You will need to provide your own slopeFriction to stabalize movement
+			    body.velocity = new Vector2(body.velocity.x - (hit.normal.x * 0.6f), body.velocity.y);
+
+			    //Move Player up or down to compensate for the slope below them
+			    Vector3 pos = transform.position;
+			    pos.y += -hit.normal.x * Mathf.Abs(body.velocity.x) * Time.deltaTime * (body.velocity.x - hit.normal.x > 0 ? 1 : -1);
+			    transform.position = pos;
+                }
+            }
             rb2d.velocity = new Vector2(0, rb2d.velocity.y);
         }
 
