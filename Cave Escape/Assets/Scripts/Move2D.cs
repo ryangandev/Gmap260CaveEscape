@@ -9,6 +9,8 @@ public class Move2D : MonoBehaviour
     public SpriteRenderer sprite_renderer;
     public static bool spriteFlipped = false;
     public bool isGrounded;
+    private float timeBtwAttack;
+    public float startTimeBtwAttack;
 
     [SerializeField]
     Transform groundCheck;
@@ -72,7 +74,16 @@ public class Move2D : MonoBehaviour
             rb2d.velocity = new Vector2(0,rb2d.velocity.y); 
 
             if(isGrounded)
-                animator.Play("Attack");
+                if(timeBtwAttack<=0)
+                {
+                    animator.Play("Attack");
+                    SoundManager.PlaySound("swing");
+
+                    timeBtwAttack = startTimeBtwAttack;
+                }else
+                {
+                    timeBtwAttack -= Time.deltaTime;
+                }
         }
 
         //Idle animation + velocity stop when not moving (stops sliding)
@@ -110,6 +121,7 @@ public class Move2D : MonoBehaviour
         if(other.gameObject.CompareTag("Coins"))
         {
             Destroy(other.gameObject);
+            SoundManager.PlaySound("coin");
         }
     }
 

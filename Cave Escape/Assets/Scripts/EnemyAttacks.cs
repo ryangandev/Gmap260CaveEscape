@@ -11,6 +11,7 @@ public class EnemyAttacks : MonoBehaviour
         if(other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<PomStatus>().PlayerTakeDamage(damage);
+            SoundManager.PlaySound("hurt");
         }
     }
     // Update is called once per frame

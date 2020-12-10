@@ -16,6 +16,7 @@ public class LoseScene : MonoBehaviour
             RisingLava.lavaRising = false;
             pauseAllowed = false;
             Destroy(other.gameObject);
+            SoundManager.PlaySound("lose");
         }
     }
 

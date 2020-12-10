@@ -26,6 +26,7 @@ public class Attack : MonoBehaviour
                     for (int i = 0; i < enemiesToDamage.Length; i++)
                     {
                         enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                        SoundManager.PlaySound("hit");
                     }
                 }
                 if(Move2D.spriteFlipped)
@@ -34,6 +35,7 @@ public class Attack : MonoBehaviour
                     for (int i = 0; i < enemiesToDamage.Length; i++)
                     {
                         enemiesToDamage[i].GetComponent<Enemy>().TakeDamage(damage);
+                        SoundManager.PlaySound("hit");
                     }
                 }
                 

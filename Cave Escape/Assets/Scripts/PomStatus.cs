@@ -25,6 +25,7 @@ public class PomStatus : MonoBehaviour
             Losescrn2.gameObject.SetActive(true);
             RisingLava.lavaRising = false;
             LoseScene.pauseAllowed = false;
+            SoundManager.PlaySound("lose");
         }
         
     }

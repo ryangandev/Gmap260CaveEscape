@@ -15,6 +15,7 @@ public class WinningScene : MonoBehaviour
             LoseScene.pauseAllowed = false;
             RisingLava.lavaRising = false;
             Destroy(other.gameObject);
+            SoundManager.PlaySound("win");
         }
     }
 
